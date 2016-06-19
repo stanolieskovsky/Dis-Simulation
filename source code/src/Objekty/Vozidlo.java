@@ -219,6 +219,10 @@ public class Vozidlo implements Comparable<Vozidlo> {
         return getTyp() + " " + getObjem() + " [m3],  " +getRychlost()+" [km/h], " +""+getCena()+" Eur"+ "\n";
 
     }
+           public String toVypis3() {
+        return getTyp()  +""+getCena()+" Eur"+ "\n";
+
+    }
 
     public void nastav(double Zaciatok, double Koniec) {
         setZaciatok(Zaciatok);
