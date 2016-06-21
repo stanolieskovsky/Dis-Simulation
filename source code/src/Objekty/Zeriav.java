@@ -68,6 +68,11 @@ public class Zeriav {
         }
         return true;
     }
+
+    @Override
+    public String toString() {
+        return "Zeriav{" + "rychlost=" + rychlost + ", nazovTyp=" + nazovTyp + '}';
+    }
       
     
 }
