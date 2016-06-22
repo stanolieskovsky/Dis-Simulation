@@ -21,6 +21,7 @@ public class ZapisDoSuboru {
 
     File file = new File("simulacieKombinacie.txt");
     File fileIntervaly = new File("simulacieKombinacieIntervaly.txt");
+     File fileZeriav = new File("zeriav.txt");
    
 
 
@@ -35,7 +36,14 @@ public class ZapisDoSuboru {
         } catch (IOException e) {
         }
     }
-
+   public void ulozDoSuborovZeriav(String s) throws FileNotFoundException, IOException {
+        try (FileWriter fw = new FileWriter("zeriav.txt", true);
+                BufferedWriter bw = new BufferedWriter(fw);
+                PrintWriter out = new PrintWriter(bw)) {
+            out.println(s);
+        } catch (IOException e) {
+        }
+    }
     public void ulozDoSuborovIntervaly(String s) throws FileNotFoundException {
 
         // fileIntervaly = new File("simulacieKombinacieIntervaly.txt");
