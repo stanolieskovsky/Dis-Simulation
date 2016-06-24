@@ -5,6 +5,7 @@ package Objekty;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+import java.util.Objects;
 import java.util.Random;
 
 /**
@@ -290,6 +291,27 @@ public class Vozidlo implements Comparable<Vozidlo> {
 
     public void setPozicia(String pozicia) {
         this.pozicia = pozicia;
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Vozidlo other = (Vozidlo) obj;
+        if (!Objects.equals(this.typ, other.typ)) {
+            return false;
+        }
+        return true;
     }
 
     
