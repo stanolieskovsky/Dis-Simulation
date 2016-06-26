@@ -51,11 +51,16 @@ public class Statist {
     pocet++;
     suma=suma+cislo;
     }
+   /**
+    *  test 
+    */
     public static void main(String[] args) {
         // TODO code application logic here
     Statist s=new Statist();
     s.pridajCislo(1, 3);
     s.pridajCislo(2, 4);
+    s.pridajCislo(1, 2);
+      s.pridajCislo(2, 4);
     s.pridajCislo(1, 2);
         System.out.println(""+ s.priemer());
     
