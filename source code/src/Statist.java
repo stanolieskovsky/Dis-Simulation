@@ -51,6 +51,12 @@ public class Statist {
     pocet++;
     suma=suma+cislo;
     }
+
+    @Override
+    public String toString() {
+        return "Statist{" + "pocet=" + pocet + ", suma=" + suma + '}';
+    }
+   
    /**
     *  test 
     */
