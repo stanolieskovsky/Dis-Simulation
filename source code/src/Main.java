@@ -40,12 +40,12 @@ public class Main {
 //            nac.vypis();
 //            nac.ulozDoSuborov();
                 
-//                   ExponentialRNG expoA=new ExponentialRNG(45.9, MySimulation.getNasada(),0.999);
-//    ExponentialRNG expoB=new ExponentialRNG(36.8, MySimulation.getNasada(),3.0);
-//   ExponentialRNG expoC=new ExponentialRNG(25.8, MySimulation.getNasada(),0.999);
-//   // GammaRNG expoC=new GammaRNG(23.8, 1.09, 0.999);
-//            System.out.println(""+expoA.sample());
-//            System.out.println(""+expoB.sample());
-//            System.out.println(""+expoC.sample());
+                   ExponentialRNG expoA=new ExponentialRNG(55.9, MySimulation.getNasada(),0.999);
+    ExponentialRNG expoB=new ExponentialRNG(33.8, MySimulation.getNasada(),3.0);
+   ExponentialRNG expoC=new ExponentialRNG(18.8, MySimulation.getNasada(),0.999);
+    GammaRNG expoC=new GammaRNG(26.8, 1.09, 0.999);
+            System.out.println(""+expoA.sample());
+            System.out.println(""+expoB.sample());
+            System.out.println(""+expoC.sample());
 	}
 }
