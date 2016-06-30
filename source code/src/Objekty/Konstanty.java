@@ -11,6 +11,8 @@ package Objekty;
  */
 public class Konstanty {
 
+        public static double silaZeriava = 45;
+    public static double ObjemZeriava = 15;
     public static double cestaAB = 45;
     public static double cestaBC = 15;
     public static double cestaCA = 35;
