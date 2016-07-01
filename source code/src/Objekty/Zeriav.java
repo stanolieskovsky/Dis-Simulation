@@ -15,6 +15,7 @@ public class Zeriav {
     private int hmotnost;
      private int rychlost;
       private String nazovTyp;
+      private int objem;
 
     public Zeriav(String nazovTyp) {
         this.nazovTyp = nazovTyp;
@@ -49,6 +50,14 @@ public class Zeriav {
         int hash = 5;
         hash = 31 * hash + Objects.hashCode(this.nazovTyp);
         return hash;
+    }
+
+    public int getObjem() {
+        return objem;
+    }
+
+    public void setObjem(int objem) {
+        this.objem = objem;
     }
 
  
