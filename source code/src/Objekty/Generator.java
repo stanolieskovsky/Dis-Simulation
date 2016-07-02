@@ -46,4 +46,61 @@ public class Generator {
         double hodnota = randsr.nextDouble();
         return hodnota;
     }
+
+    public Random getRandde1() {
+        return randde1;
+    }
+
+    public void setRandde1(Random randde1) {
+        this.randde1 = randde1;
+    }
+
+    public Random getRandde2() {
+        return randde2;
+    }
+
+    public void setRandde2(Random randde2) {
+        this.randde2 = randde2;
+    }
+
+    public Random getRandde3() {
+        return randde3;
+    }
+
+    public void setRandde3(Random randde3) {
+        this.randde3 = randde3;
+    }
+
+    public Random getRandde4() {
+        return randde4;
+    }
+
+    public void setRandde4(Random randde4) {
+        this.randde4 = randde4;
+    }
+
+    public Random getRandde5() {
+        return randde5;
+    }
+
+    public void setRandde5(Random randde5) {
+        this.randde5 = randde5;
+    }
+
+    public Random getRandsr() {
+        return randsr;
+    }
+
+    public void setRandsr(Random randsr) {
+        this.randsr = randsr;
+    }
+
+    public Random[] getPoleRand() {
+        return poleRand;
+    }
+
+    public void setPoleRand(Random[] poleRand) {
+        this.poleRand = poleRand;
+    }
+    
 }
