@@ -60,7 +60,9 @@ public class Zeriav {
         this.objem = objem;
     }
 
- 
+ /*
+    vypis triedy Zeriav
+    */
 
     @Override
     public String toString() {
