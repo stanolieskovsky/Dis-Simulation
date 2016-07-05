@@ -44,7 +44,8 @@ public class Zeriav {
     public void setNazovTyp(String nazovTyp) {
         this.nazovTyp = nazovTyp;
     }
-
+/*vygenerovana metoda
+    */
     @Override
     public int hashCode() {
         int hash = 5;
