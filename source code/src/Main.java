@@ -1,6 +1,7 @@
 
 import OSPRNG.ExponentialRNG;
 import OSPRNG.GammaRNG;
+import Objekty.Zeriav;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import simulation.MySimulation;
@@ -12,7 +13,6 @@ import simulation.ZapisDoSuboru;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author liesko3
@@ -22,11 +22,10 @@ public class Main {
     /**
      * @param args the command line arguments
      */
-	public static void main(String [] args) throws FileNotFoundException, IOException
-	{
-            ZapisDoSuboru zapis=new ZapisDoSuboru();
-            zapis.ulozDoSuborov("bistu");
-            zapis.ulozDoSuborov("druhe");
+    public static void main(String[] args) throws FileNotFoundException, IOException {
+        ZapisDoSuboru zapis = new ZapisDoSuboru();
+        zapis.ulozDoSuborov("bistu");
+        zapis.ulozDoSuborov("druhe");
 //		          MySimulation sim = new MySimulation();
 //		
 //		sim.onSimulationWillStart(s ->{
@@ -39,13 +38,16 @@ public class Main {
 //            nac.nacitajSubor();
 //            nac.vypis();
 //            nac.ulozDoSuborov();
-                
-                   ExponentialRNG expoA=new ExponentialRNG(55.9, MySimulation.getNasada(),0.999);
-    ExponentialRNG expoB=new ExponentialRNG(33.8, MySimulation.getNasada(),3.0);
-   ExponentialRNG expoC=new ExponentialRNG(18.8, MySimulation.getNasada(),0.999);
-    GammaRNG expoC=new GammaRNG(26.8, 1.09, 0.999);
-            System.out.println(""+expoA.sample());
-            System.out.println(""+expoB.sample());
-            System.out.println(""+expoC.sample());
-	}
+
+        ExponentialRNG expoA = new ExponentialRNG(55.9, MySimulation.getNasada(), 0.999);
+        ExponentialRNG expoB = new ExponentialRNG(33.8, MySimulation.getNasada(), 3.0);
+        ExponentialRNG expoC = new ExponentialRNG(18.8, MySimulation.getNasada(), 0.999);
+        GammaRNG expoC = new GammaRNG(26.8, 1.09, 0.999);
+        System.out.println("" + expoA.sample());
+        System.out.println("" + expoB.sample());
+        System.out.println("" + expoC.sample());
+        Zeriav zeriav = new Zeriav("Zeriav1");
+        zeriav.toString();
+    }
+
 }
