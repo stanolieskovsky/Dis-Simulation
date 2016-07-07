@@ -48,6 +48,9 @@ public class Main {
         System.out.println("" + expoC.sample());
         Zeriav zeriav = new Zeriav("Zeriav1");
         zeriav.toString();
+        zeriav.setHmotnost(200);
+        zeriav.setObjem(15);
+        zeriav.toString();
     }
 
 }
