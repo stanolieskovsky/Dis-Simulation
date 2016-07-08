@@ -353,7 +353,7 @@ public class Gui2 extends javax.swing.JFrame implements OSPABA.ISimDelegate {
             }
         });
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Auto A1", "Auto A2", "Auto A3", "Auto A4", "Auto A5" }));
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Auto A1", "Auto A2", "Auto A3", "Auto A4", "Auto A5", "Zeriav" }));
 
         jButton1.setText("add");
         jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -392,7 +392,7 @@ public class Gui2 extends javax.swing.JFrame implements OSPABA.ISimDelegate {
 
         jLabel24.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel24.setForeground(new java.awt.Color(153, 0, 0));
-        jLabel24.setText("time format : yy-mm-dd-hh-mm-ss");
+        jLabel24.setText("     yy-mm-dd-hh-mm-ss");
 
         jLabel25CasHore.setForeground(new java.awt.Color(255, 0, 51));
         jLabel25CasHore.setText("0");
@@ -428,9 +428,9 @@ public class Gui2 extends javax.swing.JFrame implements OSPABA.ISimDelegate {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jCheckBox3)
-                            .addComponent(jCheckBox2))
+                        .addComponent(jCheckBox3)
+                        .addGap(18, 18, 18)
+                        .addComponent(jCheckBox2)
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -535,9 +535,8 @@ public class Gui2 extends javax.swing.JFrame implements OSPABA.ISimDelegate {
                                                 .addComponent(jLabel8)))
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                                 .addComponent(jCheckBox3)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                                 .addComponent(jCheckBox2))
                                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                                 .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
